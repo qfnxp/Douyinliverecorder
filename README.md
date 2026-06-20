@@ -1,10 +1,22 @@
 # Douyinliverecorder
 抖音直播24小时无人值守录制工具
+
+
 主要功能：
+
+
 一、支持录制3种格式网址
+
+
 1、主播主页：https://www.douyin.com/user/MS4wLjABAAAAltwgvfEGZhxPKpLrpVYxrAE-
+
+
 2、电脑端直播链接：https://live.douyin.com/xxx
+
+
 3、手机端分享链接：https://v.douyin.com/xxx
+
+
 二、支持录制不同清晰度的flv或者hls直播流
 1、FULL_HD1:蓝光 
 2、HD1:超清 
