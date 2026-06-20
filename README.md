@@ -47,7 +47,11 @@
 四、录制生成的文件名前缀支持自定义
 
 
-1、可用变量及说明
+1、默认配置
+
+{{ .Live.GetPlatformCNName }}/{{ with .Live.GetOptions.GirlName }}{{ . | filenameFilter }}{{ else }}{{ .GirlName | filenameFilter }}{{ end }}/[{{ now | date "2006-01-02 15-04-05"}}][{{ .GirlName | filenameFilter }}][{{ .GirlName | filenameFilter }}][{{ .RoomName | filenameFilter }}].flv
+
+2、可用变量及说明
 
 
 变量	            说明
@@ -65,7 +69,7 @@
 .Now	          当前时间（可通过 now 函数格式化）
 
 
-2、config.yml配置示例
+3、config.yml配置示例
 
 
 out_put_tmpl: "{{ .Live.PlatformCNName }}/{{ .UniqueID }}/{{ now | date \"2006-01-02\" }}_{{ .GirlName | filenameFilter }}.flv"
