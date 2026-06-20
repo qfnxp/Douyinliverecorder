@@ -68,7 +68,7 @@
 2、config.yml配置示例
 
 
-out_put_tmpl: "{{ .PlatformCNName }}/{{ .UniqueID }}/{{ now | date \"2006-01-02\" }}_{{ .GirlName | filenameFilter }}.flv"
+out_put_tmpl: "{{ .Live.PlatformCNName }}/{{ .UniqueID }}/{{ now | date \"2006-01-02\" }}_{{ .GirlName | filenameFilter }}.flv"
 
 
 out_put_tmpl: "{{ .GirlName | filenameFilter }}_{{ .UniqueID }}/[{{ now | date \"2006-01-02 15-04-05\" }}].flv"
